@@ -1,14 +1,19 @@
-package Lecture2;
+package Lecture2.common;
+
+import Lecture2.circles.Background;
+import Lecture2.circles.Ball;
 
 import javax.swing.*;
 import java.awt.*;
 
 public class MainCanvas extends JPanel{
-    private final MainWindow controller;
+    private final CanvasRepaintListener controller;
     private long lastFrameTime;
+    Background back = new Background();
 
-    MainCanvas(MainWindow controller) {
-        setBackground(Color.BLUE);
+
+    public MainCanvas(CanvasRepaintListener controller) {
+        this.back = back;
         this.controller = controller;
         lastFrameTime = System.nanoTime();
     }
