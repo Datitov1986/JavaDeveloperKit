@@ -1,4 +1,4 @@
-package Seminar2;
+package Seminar2.task1;
 
 public class Server implements ServerListener{
     private boolean status;
