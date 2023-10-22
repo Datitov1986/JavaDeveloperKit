@@ -1,7 +1,6 @@
 package Homework3.task1;
 
 import java.util.Arrays;
-import java.util.Iterator;
 
 public class MyCollection <T>{
     private Object[] arr;
