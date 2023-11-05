@@ -1,4 +1,4 @@
-package Homework5;
+package Homework5.task1;
 
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
