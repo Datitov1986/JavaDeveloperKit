@@ -15,8 +15,8 @@ public class Main {
         Thread philA = new Thread(() -> {
             int count = 0;
             try {
+                System.out.println("Философ 1 начал размышлять");
                 while (count != 3) {
-                    //System.out.println("Философ 1 начал размышлять");
                     if (foodTable.get() == 0) {
                         foodTable.set(1);
                         philosopher_1.set(1);
@@ -25,9 +25,8 @@ public class Main {
                         count++;
                         philosopher_1.set(0);
                         foodTable.set(0);
+                        System.out.println("Философ 1 продолжает размышлять");
                         Thread.sleep(rand.nextInt(5000));
-                    } else {
-                        //System.out.println("Философ 1 продолжает размышлять");
                     }
                 }
 
@@ -39,8 +38,8 @@ public class Main {
         Thread philB = new Thread(() -> {
             int count = 0;
             try {
+                System.out.println("Философ 2 начал размышлять");
                 while (count != 3) {
-                    //System.out.println("Философ 2 начал размышлять");
                     if (foodTable.get() == 0) {
                         foodTable.set(1);
                         philosopher_2.set(1);
@@ -49,9 +48,8 @@ public class Main {
                         count++;
                         philosopher_2.set(0);
                         foodTable.set(0);
+                        System.out.println("Философ 2 продолжает размышлять");
                         Thread.sleep(rand.nextInt(5000));
-                    } else {
-                        //System.out.println("Философ 2 продолжает размышлять");
                     }
                 }
 
@@ -63,8 +61,8 @@ public class Main {
         Thread philC = new Thread(() -> {
             int count = 0;
             try {
+                System.out.println("Философ 3 начал размышлять");
                 while (count != 3) {
-                    //System.out.println("Философ 3 начал размышлять");
                     if (foodTable.get() == 0) {
                         foodTable.set(1);
                         philosopher_3.set(1);
@@ -73,9 +71,8 @@ public class Main {
                         count++;
                         philosopher_3.set(0);
                         foodTable.set(0);
+                        System.out.println("Философ 3 продолжает размышлять");
                         Thread.sleep(rand.nextInt(5000));
-                    } else {
-                        //System.out.println("Философ 3 продолжает размышлять");
                     }
                 }
 
@@ -87,8 +84,8 @@ public class Main {
         Thread philD = new Thread(() -> {
             int count = 0;
             try {
+                System.out.println("Философ 4 начал размышлять");
                 while (count != 3) {
-                    //System.out.println("Философ 4 начал размышлять");
                     if (foodTable.get() == 0) {
                         foodTable.set(1);
                         philosopher_4.set(1);
@@ -97,9 +94,8 @@ public class Main {
                         count++;
                         philosopher_4.set(0);
                         foodTable.set(0);
+                        System.out.println("Философ 4 продолжает размышлять");
                         Thread.sleep(rand.nextInt(5000));
-                    } else {
-                        //System.out.println("Философ 4 продолжает размышлять");
                     }
                 }
 
@@ -111,8 +107,8 @@ public class Main {
         Thread philE = new Thread(() -> {
             int count = 0;
             try {
+                System.out.println("Философ 5 начал размышлять");
                 while (count != 3) {
-                    //System.out.println("Философ 5 начал размышлять");
                     if (foodTable.get() == 0) {
                         foodTable.set(1);
                         philosopher_5.set(1);
@@ -121,9 +117,8 @@ public class Main {
                         count++;
                         philosopher_5.set(0);
                         foodTable.set(0);
+                        System.out.println("Философ 5 продолжает размышлять");
                         Thread.sleep(rand.nextInt(5000));
-                    } else {
-                        //System.out.println("Философ 5 продолжает размышлять");
                     }
                 }
 
